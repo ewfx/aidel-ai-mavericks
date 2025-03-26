@@ -2,11 +2,10 @@ import os
 import re
 from groq import Groq
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
 import json
 
 client = Groq(
-    api_key = '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',
+    api_key = os.environ.get('GROQ_API_KEY'),
 )
 
 risk_assessment_prompt = """

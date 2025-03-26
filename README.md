@@ -68,16 +68,19 @@ This system enhances fraud detection, reduces manual workload, and accelerates f
 
 ## 🛠️ How We Built It
 Technologies/Frameworks Used:
-Python 3.12
-llama-3.3-70b-versatile
-Groq API Client
+1. Python 3.12
+2. llama-3.3-70b-versatile
+3. Groq API Client
 
 ## 🏃 How to Run
 Python 3.12.x is required.
+
+Setup the Groq API key as an environment variable to be able to use in the application.
+
 Run the below to install dependencies:
-pip3 install groq
-pip3 install fastapi
-pip3 install uvicorn
+- pip3 install groq
+- pip3 install fastapi
+- pip3 install uvicorn
 
 To start the app run the below command :
 uvicorn risk_analysis_api:app --host 0.0.0.0 --port 8000 --reload

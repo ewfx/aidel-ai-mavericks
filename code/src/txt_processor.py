@@ -14,5 +14,6 @@ def process_txt_file(content_str: str) -> List[Dict[str, Any]]:
             line=re.sub(r'[“”\'"]', '', line).strip()
             cleaned_text += line + "\n" 
         cleaned_text = cleaned_text.strip()
+        
         all_results.append(cleaned_text)
     return all_results

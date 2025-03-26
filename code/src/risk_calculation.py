@@ -69,7 +69,7 @@ def analyze_risk(transaction: str):
             timeout=30,
         )
         output_text = response.choices[0].message.content.strip()
-        #print(f"Raw Response: {output_text}")
+       
         json_match = re.search(r'\{.*\}', output_text, re.DOTALL)
         if not json_match:
             print(f"Failed to extract JSON. Raw response: {output_text}")
@@ -79,7 +79,7 @@ def analyze_risk(transaction: str):
 
         try:
             output_json = json.loads(json_text)  # Safe JSON parsing
-            print(output_json)
+            
         except json.JSONDecodeError as e:
             print(f"JSON Parsing Error: {e}, Raw Response: {json_text}")
             return {"error": "Invalid JSON format returned by model", "raw_response": json_text}
@@ -87,5 +87,4 @@ def analyze_risk(transaction: str):
         return output_json
     
     except Exception as e:
-        print(str(e))
-        raise HTTPException(status_code=500, detail=str(e))
+        return {"error": str(e)}

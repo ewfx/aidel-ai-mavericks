@@ -1,5 +1,4 @@
 from typing import List, Dict, Any
-from entity_extraction import process_unstructured_transaction
 import re
 
 def process_txt_file(content_str: str) -> List[Dict[str, Any]]:
@@ -14,6 +13,6 @@ def process_txt_file(content_str: str) -> List[Dict[str, Any]]:
             line=re.sub(r'[“”\'"]', '', line).strip()
             cleaned_text += line + "\n" 
         cleaned_text = cleaned_text.strip()
-        
+
         all_results.append(cleaned_text)
     return all_results

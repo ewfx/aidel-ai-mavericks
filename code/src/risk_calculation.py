@@ -56,7 +56,7 @@ def analyze_risk(transaction: str):
             messages=[{"role": "user", "content": final_prompt}],
             model="llama-3.3-70b-versatile",
             temperature=0.7,
-            max_tokens=300,
+            max_tokens=500,
             timeout=30,
         )
         output_text = response.choices[0].message.content.strip()

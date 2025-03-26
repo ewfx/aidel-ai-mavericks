@@ -23,11 +23,6 @@ By leveraging AI, we enhance fraud detection, regulatory compliance, and financi
 ## 🎥 Demo
 Demo videos are uploaded in test folder along with data used in the demo
 
-🖼️ Screenshots:
-
-![Screenshot 1](link-to-image)
-
-
 
 ## ⚙️ What It Does
 Key Features & Functionalities of the AI-Powered Financial Risk Assessment

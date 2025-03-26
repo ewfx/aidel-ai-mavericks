@@ -33,36 +33,27 @@ Demo videos are uploaded in test folder along with data used in the demo
 Key Features & Functionalities of the AI-Powered Financial Risk Assessment
 Our AI-driven financial risk assessment system offers a structured, automated approach to evaluating transaction risks. Here are its core features:
 
-1. Risk Scoring & Confidence Assessment
-Assigns a Risk Score (0-1) based on sender, receiver, and intermediaries.
-
-Computes a Confidence Score (0-1) based on the reliability and credibility of sources.
+1. Risk Scoring & Confidence Assessment:
+- Assigns a Risk Score (0-1) based on sender, receiver, and intermediaries.
+- Computes a Confidence Score (0-1) based on the reliability and credibility of sources.
 
 2. Data-Driven Risk Evaluation
-Extracts entities from the transaction (e.g., individuals, corporations, shell companies).
-
-Analyzes fraud history, financial instability, regulatory violations, and sanctions.
-
-Considers VPN usage, transaction locations, and intermediaries for enhanced risk detection.
+- Extracts entities from the transaction (e.g., individuals, corporations, shell companies).
+- Analyzes fraud history, financial instability, regulatory violations, and sanctions.
+- Considers VPN usage, transaction locations, and intermediaries for enhanced risk detection.
 
 3. Source-Based Evidence & Justification
-Uses authoritative financial reports, regulatory filings, and crime databases to support assessments.
+- Uses authoritative financial reports, regulatory filings, and crime databases to support assessments.
+- Only includes relevant sources that impact the risk score (e.g., OpenCorporates, SEC Edgar, OFAC Sanctions List).
 
-Only includes relevant sources that impact the risk score (e.g., OpenCorporates, SEC Edgar, OFAC Sanctions List).
-
-4. Adaptive Risk Calculation
-Weighted risk formula:
-
-Sender Risk (50%)
-
-Receiver Risk (30%)
-
-Intermediary Risk (20%) (if applicable, otherwise balanced equally between sender & receiver)
+4. Adaptive Risk Calculation using a weighted risk formula
+- Sender Risk (50%)
+- Receiver Risk (30%)
+- Intermediary Risk (20%) (if applicable, otherwise balanced equally between sender & receiver)
 
 5. Automated & Structured JSON Output
-Generates machine-readable JSON with risk insights.
-
-Ensures consistency and compliance for financial institutions.
+- Generates machine-readable JSON with risk insights.
+- Ensures consistency and compliance for financial institutions.
 
 This system enhances fraud detection, reduces manual workload, and accelerates financial decision-making, making risk assessment more efficient, reliable, and scalable.
 

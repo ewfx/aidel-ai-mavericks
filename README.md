@@ -1,5 +1,5 @@
 # 🚀 Project Name
-
+AIDEL-AI-MAVERICKS
 ## 📌 Table of Contents
 - [Introduction](#introduction)
 - [Demo](#demo)
@@ -14,7 +14,11 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+Our project focuses on AI-driven financial risk assessment for transaction analysis. It aims to automate risk evaluation by analyzing transaction details and generating structured risk insights.
+
+Financial institutions struggle with manual risk assessments, leading to delays, inconsistencies, and potential fraud exposure. Our AI model efficiently processes transaction data, evaluates risk factors using authoritative sources, and delivers accurate, real-time risk scores in a structured JSON format.
+
+By leveraging AI, we enhance fraud detection, regulatory compliance, and financial security, ensuring faster, more reliable decision-making in the financial sector. 
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
@@ -23,38 +27,57 @@ A brief overview of your project and its purpose. Mention which problem statemen
 
 ![Screenshot 1](link-to-image)
 
-## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+Key Features & Functionalities of the AI-Powered Financial Risk Assessment
+Our AI-driven financial risk assessment system offers a structured, automated approach to evaluating transaction risks. Here are its core features:
+
+1. Risk Scoring & Confidence Assessment
+Assigns a Risk Score (0-1) based on sender, receiver, and intermediaries.
+
+Computes a Confidence Score (0-1) based on the reliability and credibility of sources.
+
+2. Data-Driven Risk Evaluation
+Extracts entities from the transaction (e.g., individuals, corporations, shell companies).
+
+Analyzes fraud history, financial instability, regulatory violations, and sanctions.
+
+Considers VPN usage, transaction locations, and intermediaries for enhanced risk detection.
+
+3. Source-Based Evidence & Justification
+Uses authoritative financial reports, regulatory filings, and crime databases to support assessments.
+
+Only includes relevant sources that impact the risk score (e.g., OpenCorporates, SEC Edgar, OFAC Sanctions List).
+
+4. Adaptive Risk Calculation
+Weighted risk formula:
+
+Sender Risk (50%)
+
+Receiver Risk (30%)
+
+Intermediary Risk (20%) (if applicable, otherwise balanced equally between sender & receiver)
+
+5. Automated & Structured JSON Output
+Generates machine-readable JSON with risk insights.
+
+Ensures consistency and compliance for financial institutions.
+
+This system enhances fraud detection, reduces manual workload, and accelerates financial decision-making, making risk assessment more efficient, reliable, and scalable.
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
-
-## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+Technologies/Frameworks Used:
+Python 3.12
+llama-3.3-70b-versatile
+Groq API Client
 
 ## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+Python 3.12.x is required.
+Run the below to install dependencies:
+pip3 install groq
+pip3 install fastapi
+pip3 install uvicorn
 
-## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
-
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+To start the app run the below command :
+uvicorn risk_analysis_api:app --host 0.0.0.0 --port 8000 --reload

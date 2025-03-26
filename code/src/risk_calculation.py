@@ -63,7 +63,6 @@ def analyze_risk(transaction: str):
        
         json_match = re.search(r'\{.*\}', output_text, re.DOTALL)
         if not json_match:
-            print(f"Failed to extract JSON. Raw response: {output_text}")
             return {"error": "Invalid JSON format returned by model", "raw_response": output_text}
 
         json_text = json_match.group()
@@ -72,7 +71,6 @@ def analyze_risk(transaction: str):
             output_json = json.loads(json_text)  # Safe JSON parsing
             
         except json.JSONDecodeError as e:
-            print(f"JSON Parsing Error: {e}, Raw Response: {json_text}")
             return {"error": "Invalid JSON format returned by model", "raw_response": json_text}
 
         return output_json

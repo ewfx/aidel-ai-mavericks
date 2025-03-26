@@ -21,8 +21,8 @@ Financial institutions struggle with manual risk assessments, leading to delays,
 By leveraging AI, we enhance fraud detection, regulatory compliance, and financial security, ensuring faster, more reliable decision-making in the financial sector. 
 
 ## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
+Demo videos are uploaded in test folder along with data used in the demo
+
 🖼️ Screenshots:
 
 ![Screenshot 1](link-to-image)

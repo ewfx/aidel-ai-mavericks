@@ -1,0 +1,11 @@
+Transaction ID,Payer Name,Receiver Name,Transaction Details,Amount,Receiver Country
+TXN001,Acme Corp,SovCo Capital Partners,Payment for services rendered,"$500,000",USA
+TXN002,Global Trading Ltd,Offshore Holdings Inc.,Investment Transfer,"$1,200,000",Cayman Islands
+TXN003,Alpha Finance,Beta Ventures,Loan Repayment,"$750,000",UK
+TXN004,Summit Bank,Everest Consulting,Consulting Fees,"$300,000",Switzerland
+TXN005,Oceanic Holdings LLC,Alas Chiricanas,Offshore Investment,"$5,000,000",Panama
+TXN006,Tech Innovators,Silicon Valley Funds,R&D Funding,"$2,500,000",USA
+TXN007,Energy Solutions,Solar Future Ltd,Project Financing,"$3,750,000",Germany
+TXN008,MegaCorp,MicroTech,Acquisition Payment,"$6,000,000",Japan
+TXN009,Crypto Fund,Digital Assets Ltd,Crypto Exchange Settlement,"$900,000",Singapore
+TXN010,Industrial Partners,Manufacturing Group,Equipment Purchase,"$1,800,000",China
